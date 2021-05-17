@@ -1,9 +1,13 @@
 import React from 'react';
 
+function getButtonText() {
+    return 'Submit your response';
+}
+
 const Button = () => {
-    const buttonText = 'My Button';
+    const buttonText = { text: 'Hi there'};
     return (
-        <button className='button'>{buttonText}</button>
+        <button className='button' style={{backgroundColor: 'blue'}}>{buttonText.text}</button>
     );
 }
 
