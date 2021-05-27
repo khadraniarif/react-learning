@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 import SeasonDsiplay from './components/SeasonDisplay/SeasonDisplay';
+import Spinner from './components/Spinner/Spinner';
 
 class App extends React.Component {
   
@@ -31,11 +32,7 @@ class App extends React.Component {
       return <SeasonDsiplay lat = {this.state.lat}/>
     }
 
-    return (
-      <div>
-        Loading...
-      </div>
-    )
+    return <Spinner message="Please accept location request"/>
   }
 }
 
